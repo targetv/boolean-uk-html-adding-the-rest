@@ -1,0 +1,75 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  grid-template:
+    " nav nav nav" 50px
+    ". main ." 1fr/
+    200px 1fr 200px;
+  height: 100vh;
+  width: 100vw;
+}
+.border {
+  border: 1px solid black;
+  text-align: center;
+}
+nav {
+  display: grid;
+  grid-area: nav;
+  background-color: red;
+  grid-template-columns: 50px 200px 1fr;
+  padding: 5px 200px;
+}
+.icons {
+  display: grid;
+  grid-template-columns: repeat(8, 50px);
+  grid-gap: 10px;
+  place-content: end;
+  margin-top: 8px;
+}
+main {
+  grid-area: main;
+  background-color: blue;
+  display: grid;
+  grid-template-columns: 200px 1fr 300px;
+  margin-top: 20px;
+}
+.left-menu {
+  display: grid;
+  grid-template-rows: 300px 200px 300px;
+  grid-gap: 10px;
+}
+.profile {
+  display: grid;
+  grid-template-rows: 125px 75px 50px 50px;
+}
+.boolean {
+  display: grid;
+  grid-template-rows: 110px 1fr 25px;
+}
+.recent {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.main {
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  grid-gap: 10px;
+}
+.start-post {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.type-and-profile {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.right-menu {
+  display: grid;
+  grid-template-rows: 300px 200px 1fr;
+  grid-gap: 10px;
+}

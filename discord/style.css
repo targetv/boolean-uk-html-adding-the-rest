@@ -30,18 +30,42 @@
     display: none;
   }
 }
+.items {
+  border: solid 1px black;
+  text-align: center;
+}
+
+.discords .items {
+  border-radius: 50%;
+  width: 30px;
+  font-size: 20px;
+  place-content: center;
+}
 
 .main {
   background-color: red;
   grid-area: main;
+  display: grid;
+  grid-auto-rows: 1fr 100px;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  padding: 5px 5px;
 }
+
 .server {
   background-color: yellow;
   grid-area: server;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 100px;
+  padding: 10px 10px;
+  grid-gap: 20px;
 }
+
 .channel-name {
   background-color: green;
   grid-area: channel-name;
+  text-align: center;
 }
 .icons-footer {
   background-color: purple;
@@ -50,12 +74,26 @@
 .discords {
   background-color: orange;
   grid-area: discords;
+  display: grid;
+  place-items: center;
+  padding: 15px 0px;
+  grid-gap: 30px;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 20px;
 }
 .icons {
   background-color: grey;
   grid-area: icons;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-auto-rows: 20px;
+  grid-gap: 10px;
+
+  place-content: center;
 }
+
 .server-name {
   background-color: lightblue;
   grid-area: server-name;
+  text-align: center;
 }
